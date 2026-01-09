@@ -38,7 +38,8 @@ export const PROJECTS: Project[] = [
       "Scalable backend using FastAPI & SQLAlchemy with a React + TypeScript frontend utilizing MUI components."
     ],
     tags: ["React", "FastAPI", "Groq LLM", "SQLAlchemy", "TypeScript"],
-    github: "#"
+    github: "#",
+    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000"
   },
   {
     title: "SwiftVQA: Lightweight Video QA System",
@@ -49,7 +50,8 @@ export const PROJECTS: Project[] = [
       "Answer generation using BART (Hugging Face)."
     ],
     tags: ["Python", "Whisper", "Hugging Face", "NLP", "Computer Vision"],
-    github: "#"
+    github: "#",
+    imageUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000"
   },
   {
     title: "Movie Recommender System",
@@ -59,7 +61,8 @@ export const PROJECTS: Project[] = [
       "Dynamic website integration for a seamless user experience."
     ],
     tags: ["Python", "Pandas", "Scikit-Learn", "Flask"],
-    github: "#"
+    github: "#",
+    imageUrl: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1000"
   }
 ];
 

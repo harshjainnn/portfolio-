@@ -111,10 +111,12 @@ function renderExperience() {
 function renderProjects() {
     const container = document.getElementById('projects-grid');
     if (!container) return;
-    container.innerHTML = PROJECTS.map(project => `
+    container.innerHTML = PROJECTS.map(project => {
+        const displayImage = project.imageUrl || `https://picsum.photos/seed/${project.title}/600/400`;
+        return `
         <div class="flex flex-col h-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all">
             <div class="aspect-video bg-slate-800 relative">
-                <img src="https://picsum.photos/seed/${project.title}/600/400" class="w-full h-full object-cover opacity-60">
+                <img src="${displayImage}" class="w-full h-full object-cover opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -125,7 +127,8 @@ function renderProjects() {
                 </div>
             </div>
         </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 function renderSkills() {
